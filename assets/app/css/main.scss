@@ -99,7 +99,93 @@ $textColor: #eb6752;
         background-image: linear-gradient( 90deg, $secondColor 0%, $secondColor 45%, $mainColor 45%, $mainColor 60%);
     }
 
-    .home, .about-us{
+    .hasil{
+        background-image: -webkit-linear-gradient( 90deg, $secondColor 0%, $secondColor 30%, $mainColor 30%, $mainColor 60%);
+        background-image: linear-gradient( 90deg, $secondColor 0%, $secondColor 30%, $mainColor 30%, $mainColor 60%);
+
+        .page-main {
+            .title{
+                h1, h2{
+                    color: $mainColor;
+                }
+            }
+
+            .content {
+                font-family: 'Montserrat', sans-serif;
+
+                .header-hasil{
+                    & > div {
+                        margin: 10px;
+                    }
+
+                    span{
+                        color: $textColor;
+                        font-size: 2.0rem;
+                        font-weight: 600;
+                    }
+                }
+
+                .content-hasil{
+
+                    & > div {
+                        margin: 10px;
+                        padding: 10px;
+                    }
+
+                    span{
+                        color: $secondColor;
+                        font-size: 1.4rem;
+                    }
+                    
+                    .alternatif, .nilai{
+                        border: 1px solid $textColor;
+                        border-radius: 5px;
+                    }
+                }
+
+                .tambah-hasil{
+                    margin-top: 45px;
+                    
+                    button{
+                        font-size: 15px;
+                        padding: 10px;
+                        margin-right: 10px;
+                        background-color: $textColor;
+                        border: 1px solid $textColor;
+                        color: $secondColor;
+                        border-radius: 4px;
+                        -webkit-transition: background-color 300ms linear;
+                        -ms-transition: background-color 300ms linear;
+                        transition: background-color 300ms linear;
+
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        #popup-reg.popup {
+            .popup-content{
+                height: 100%;
+                left: unset;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                transform: translate(0px);
+                width: 70%;
+            }
+
+            .fade-out{
+                top: 50%;
+                left: -20px;
+                right: unset;
+            }
+        }
+    }
+
+    .home, .about-us, .hasil{
         background-color: $secondColor;      
         
         .page-main{
@@ -306,8 +392,96 @@ $textColor: #eb6752;
         .home{
             background-image: -webkit-linear-gradient( 180deg, $secondColor 0%, $secondColor 42%, $mainColor 46%, $mainColor 60%);
             background-image: linear-gradient( 180deg, $secondColor 0%, $secondColor 42%, $mainColor 46%, $mainColor 60%);
+
+            #popup-reg.popup.active {
+                .popup-content{
+                    height: 100%;
+                    left: unset;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    transform: translate(0px);
+                    width: 100%;
+                }
+    
+                .fade-out{
+                    position: relative;
+                    display: block;
+                    top: unset;
+                    left: unset;
+                    right: unset;
+                    margin-top: 10px;
+                }
+            }
         }
-        .home, .about-us{
+
+        .hasil{
+            background: $mainColor;
+            .page-main{
+                .main.row {
+                    .banner{
+                        text-align: center;
+                        
+                        .title{
+                            h1{
+                                font-size: 1.9rem;
+                                margin-bottom: 0;
+                                color: $secondColor;
+                            }
+                            h2{
+                                margin-top: 10px;
+                                font-size: 18px;
+                                color: $secondColor;
+                            }
+                        }
+                    }
+
+                    .content{
+                        padding: 15px;
+
+                        .header-hasil, .content-hasil{
+                            span{
+                                font-size: 1.5rem;
+                            }
+
+                            .col-sm-1{  
+                                width: 9%;
+                                display: inline-block;
+                                border: none;
+
+                            }
+
+                            .col-sm-6{
+                                width: 40%;
+                                display: inline-block;
+                                border: none;
+                            }
+
+                            .col-sm-3{
+                                width: 10%;
+                                display: inline-block;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+            #popup-reg.popup {
+                .popup-content{
+                    width: 100%;
+                }
+    
+                .fade-out{
+                    position: relative;
+                    display: block;
+                    top: unset;
+                    left: unset;
+                    right: unset;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .home, .about-us, .hasil{
             padding-top: 40px;
 
             .page-main{

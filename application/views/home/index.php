@@ -52,13 +52,10 @@
                 <!-- button action-->
                 <div class="action-button row">
                     <button type="button" class="main-btn-rect-home popup-btn col-sm-6" data-popup="popup-reg">Tambah Alternatif</button>
-                    <a href="<?= base_url('hasil'); ?>" type="button" class="main-btn-rect-home action-hitung col-sm-5"><span>Hitung</span></a>
+                    <a href="<?= base_url('hasil'); ?>" type="button" class="main-btn-rect-home action-hitung col-sm-5"><span>Hitung</span></a></div>
             </div>
         </div>
     </div>
-
-
-
     <!-- Popup add Alter -->
     <div id="popup-reg" class="popup alter">
         <div class="popup-content">

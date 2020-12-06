@@ -10,7 +10,7 @@
                 </div>
                 <div class="top">
                     <span>
-                        Sistem Pendukung Keputusan ini digunakan untuk mencari atau menentukan laptop gaming yang terbaik sesuai dengan spesifikasi yang diinginkan.
+                        Sistem Pendukung Keputusan ini digunakan untuk mencari atau menentukan tempat pembuangan akhir yang sesuai dengan kriteria yang telah dimasukan.
                     </span>
                 </div>
                 <div class="faq">
@@ -27,7 +27,9 @@
 
                             <div id="collapseFirst" class="collapse show" aria-labelledby="headingFirst" data-parent="#accordion-faq">
                             <div class="card-body">
-                                    Pergi ke halaman <a href="<?= base_url(); ?>" style="color:#F0B676;">Home</a>, kemudian klik tambah alternatif, lalu masukan spesifikasi laptop yang ingin anda jadikan alternatif, jika sudah kemudian klik Hitung maka anda akan mendapatkan hasil dari perhitungan SAW, dan urutan laptop mana yang terbaik untuk anda.
+                                   Nama : Ajit Rimbayana Fail<br>
+                                   NIM : 14030031<br>
+                                   Prodi : Teknik Informatika
                             </div>
                             </div>
                         </div>
@@ -43,23 +45,10 @@
 
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-faq">
                             <div class="card-body">
-                                    Pergi ke halaman <a href="<?= base_url(); ?>" style="color:#F0B676;">Home</a>, kemudian klik tambah alternatif, lalu masukan spesifikasi laptop yang ingin anda jadikan alternatif, jika sudah kemudian klik Hitung maka anda akan mendapatkan hasil dari perhitungan SAW, dan urutan laptop mana yang terbaik untuk anda.
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="fas fa-chevron-up"></i>    
-                                    <span>Berapa banyak alternatif yang dapat saya masukan?</span>
-                                    
-                                </button>
-                            </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
-                            <div class="card-body">
-                                Masukan minimal 2 alternatif agar dapat perbandingan dari perhitungan SAW, setelah anda mendapatkan hasil di halaman <a style="color:#F0B676;">Hasil</a>, anda juga dapat menambahkan alternatif lagi di sebelah kiri halaman tersebut.
+                                  1. Ke halaman <a href="<?= base_url(); ?>" style="color:#eb6752;">Home</a>, <br>
+                                  2. Klik tambah alternatif, <br>
+                                  3. Masukan spesifikasi tempat pembuangan akhir yang ingin anda jadikan alternatif<br>
+                                  4. Jika sudah kemudian klik Hitung maka anda akan mendapatkan hasil dari perhitungan Weighted Product.
                             </div>
                             </div>
                         </div>
