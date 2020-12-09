@@ -66,4 +66,4 @@ $route['hapus'] = 'index/hapusSaw';
 $route['hapusItem/(:num)'] = 'index/hapusItem/$1';
 
 // tambah dan hitung
-$route['tambah_hitung'] = 'index/tambahHitung';
+$route['tambah_hitung'] = 'hasil/tambahHitung';

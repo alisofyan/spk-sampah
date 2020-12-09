@@ -421,6 +421,7 @@ a.main-btn-rect.action-hitung:hover{
   z-index: 10001;
 }
 .popup.active{
+  backdrop-filter: blur(8px);
   right: 0;
   top:0;
   background-color: rgba(0, 0, 0, 0.8); 

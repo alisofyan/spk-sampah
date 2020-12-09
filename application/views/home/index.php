@@ -39,14 +39,14 @@
                 <!-- alter added -->
                 <div class="after-input">
                     <ul class="list-group">
-                        <?php for ($x = 1; $x <= 5; $x++) : ?>
+                        <?php foreach ($daerah as $data) : ?>
                         <li class="list-group-item">
-                            <span>Alternatif <?= $x; ?></span>
-                            <a href="#"  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                            <span><?= $data->nama; ?></span>
+                            <a href="<?= base_url('hapusItem/'.$data->id_alternatif); ?>"  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
                                 <i class="fas fa-minus"></i>
                             </a>
                         </li>
-                        <?php endfor; ?>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
                 <!-- button action-->
@@ -64,6 +64,12 @@
             </div>
             <hr>
             <form id="send" class="send-form" action="<?= base_url('simpan') ?>" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="Masukan nama daerah" id="daerah" name="daerah" required="required">
+                    <label for="daerah">
+                        <span>Nama Daerah</span>
+                    </label>
+                </div>
                 <div class="form-group">
                     <input type="number" placeholder="Masukan luas tanah dalam m2" id="ls-tanah" name="ls-tanah" required="required">
                     <label for="ls-tanah">

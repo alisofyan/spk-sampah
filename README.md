@@ -1,1 +1,1 @@
-"Sistem Pendukung Keputusan Pemilihan Laptop Gaming" 
+"Sistem Pendukung Keputusan Pemilihan Tempat Pembuangan Akhir dengan Metode WP" 
