@@ -22,19 +22,19 @@
                 </div>
 
                 <!-- Hasil -->
-                <?php for($x=1; $x<=5; $x++) : ?>
+                <?php $no = 1; foreach($vektor as $data) : ?>
                 <div class="content-hasil row justify-content-sm-center">
                     <div class="col-sm-1 nomor">
-                        <span><?= $x; ?>.</span>
+                        <span><?= $no; ?>.</span>
                     </div>
                     <div class="col-sm-6 alternatif">
-                        <span>Alternatif <?= $x; ?></span>
+                        <span><?= $data['nama']; ?></span>
                     </div>
                     <div class="col-sm-3 nilai">
-                        <span><?= $x; ?>.00</span>
+                        <span><?= $data['vektor_v']; ?></span>
                     </div>
                 </div>
-                <?php endfor;?>
+                <?php $no++; endforeach;?>
 
                 <!-- Tambah -->
                 <div class="tambah-hasil row justify-content-sm-center">
@@ -51,7 +51,13 @@
                 <h6>Masukan Spesifikasi TPA</h6>
             </div>
             <hr>
-            <form id="send" class="send-form" action="<?= base_url('simpan') ?>" method="POST">
+            <form id="send" class="send-form" action="<?= base_url('tambah_hitung') ?>" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="Masukan nama daerah" id="daerah" name="daerah" required="required">
+                    <label for="daerah">
+                        <span>Nama Daerah</span>
+                    </label>
+                </div>
                 <div class="form-group">
                     <input type="number" placeholder="Masukan luas tanah dalam m2" id="ls-tanah" name="ls-tanah" required="required">
                     <label for="ls-tanah">
